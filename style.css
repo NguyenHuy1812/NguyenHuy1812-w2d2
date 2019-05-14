@@ -1,13 +1,10 @@
-.body-section{
+
+.content{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+   
 }
-.btn{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+
 .result{
     background-color: transparent;
     color: red;
@@ -16,4 +13,7 @@
 .middle{
     display: flex;
     justify-content: center; 
+}
+label{
+    text-align: center;
 }

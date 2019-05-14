@@ -5,61 +5,73 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>Currency converter</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
-    <h1>Currency Converter
-      </h1>
-     
-    
-<div class = "body-section container">
-    <label class="middle font-weight-bold"><p>Start currency </p></label>
+<body class ="container">
+
+  <h1 class="middle text-success">Currency Converter</h1>
+
+  <label class="middle font-weight-bold mt-sm-3 mb-sm-1 text-primary">
+    <p>Start currency </p>
+  </label>
+  <div class="content">
     <select id="currency1">
-        <option value="">--Please choose an option--</option>
-        <option value="vnd">VND</option>
-        <option value="usd">USD</option>
-        <option value="eur">EUR</option>
-        <option value="krw">KRW</option>  
+      <option value="">--Please choose an option--</option>
+      <option value="vnd">VND</option>
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="krw">KRW</option>
     </select>
-     
-    <label class="middle font-weight-bold" ><p>End currency</p></label>
+  </div>
 
+  <label class="middle font-weight-bold mt-sm-3 mb-sm-1 text-primary">
+    <p>End currency</p>
+  </label>
+  <div class="content ">
     <select id="currency2">
-        <option value="">--Please choose an option--</option>
-        <option value="vnd">VND</option>
-        <option value="usd">USD</option>
-        <option value="eur">EUR</option>
-        <option value="krw">KRW</option>
-     
+      <option value="">--Please choose an option--</option>
+      <option value="vnd">VND</option>
+      <option value="usd">USD</option>
+      <option value="eur">EUR</option>
+      <option value="krw">KRW</option>
+
     </select>
- </div>   
- <div class= "btn container" >     
- <button onclick=convertCurrency() >
-    Convert Currency 
-</button>
+  </div>
+  <div>
+    
+      <div class="middle font-weight-bold mt-sm-3 mb-sm-1 text-primary">
+        <input class="border border-info type="text" id="amount" />
+      </div>
+      <div>
+          <div class="middle font-weight-bold">
+            <button class="btn btn-primary" onclick=convertCurrency()>
+              Convert Currency
+            </button>
+          </div>
+    </div>
 
-<input type="text" id="amount"/>
+
+    <p class="middle font-weight-bold text-danger" id="result"></p>
+    <p class="middle font-weight-bold text-danger" id="messenger"> </p>
+  </div>
 
 
-</div> 
-<div class="btn container">
-    <p class="result container" id="result"></p>
-    <p class="result container" id="messenger"> </p >
-</div>
-
- 
 
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="convert.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="convert.js"></script>
 </body>
 
 </html>
