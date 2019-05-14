@@ -1,0 +1,19 @@
+.body-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.result{
+    background-color: transparent;
+    color: red;
+    font-size: bold;
+}
+.middle{
+    display: flex;
+    justify-content: center; 
+}
